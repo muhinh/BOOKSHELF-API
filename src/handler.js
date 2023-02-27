@@ -24,7 +24,7 @@ const addBookHandler = (request, h) => {
       updatedAt,
     };
 
-    if (typeof name = 'undefined'){
+    if (typeof name === 'undefined'){
         const response = h.response({
           status: 'fail',
           message: 'Gagal menambahkan buku. Mohon isi nama buku',
