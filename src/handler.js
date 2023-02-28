@@ -20,7 +20,7 @@ const addBookHandler = (request, h) => {
       readPage, 
       finished, 
       reading, 
-      createdAt, 
+      insertedAt, 
       updatedAt,
     };
 
@@ -51,7 +51,7 @@ const addBookHandler = (request, h) => {
           status: 'success',
           message: 'Buku berhasil ditambahkan',
           data: {
-            noteId: id,
+            bookId: id,
           },
         });
         response.code(201);
